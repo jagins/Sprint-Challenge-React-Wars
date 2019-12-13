@@ -26,13 +26,29 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React is a library that allows UI components to be rendered dynamically and easily using javascript. It's a lot easier to use than having to do all the appending and creating elements like we did before. In React we can use JSX which reads a whole lot like html and we can fill the text easily with variables
+    or props. React also allows to have a big project be reduced to a single page so the user doesn't have to keep jumping around links and the web address changing.
+    This is achieved by loading what the user sees dynamically.
+
 - [ ] What does it mean to _think_ in react?
 
+    The React way is to think using components. Everthing in an app can be broken up into separte components and rendered to the screen.
+    This also makes it easier for other devs to work on the same project simultaneously.
+
 - [ ] Describe state.
+    
+    State is a variable that keeps a value stored in memory. React then updates when a state has changed.
 
 - [ ] Describe props.
 
+    Props are properties that are passed down from a parent component to a child component to use. An example would be a parent component has a name
+    prop and passes it down to the child component to be rendered as a h1 onto the page.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    
+    A side effect is an asynchoranous function which is a function that runs at the same time the other functions are running. To sync effects
+    you would use the useEffect hook with a dependency array and if a variable was to be put in the array that useEffect would only fire
+    if that variable's state has changed.
 
 ## Project Set Up
 
