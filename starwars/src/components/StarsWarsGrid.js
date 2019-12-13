@@ -22,7 +22,14 @@ export default function StarwarsGrid()
     return (
         <div className="container">
             <div className='enterFriends'>
-                
+                {friends.map(friend =>
+                {
+                    return<StarWarsPeopleCard 
+                        key={friend.created} 
+                        name={friend.name}
+                        gender={friend.gender}
+                        />
+                })}
             </div>
         </div>
     )
