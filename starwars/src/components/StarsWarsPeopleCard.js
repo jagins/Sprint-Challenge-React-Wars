@@ -3,10 +3,6 @@ import {StyledDiv} from '../styles/style'
 
 function StarwarsPeopleCard(props)
 {
-    // if(props.gender === "n/a")
-    // {
-    //     props.gender = "Unknown";
-    // }
     let {gender, name} = props;
     if(gender === 'n/a')
     {

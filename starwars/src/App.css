@@ -6,3 +6,13 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.people-card h1
+{
+  font-family: 'Pacifico', cursive;
+  /* color: #d1faff; */
+  color: #373f47;
+}
+.people-card p
+{
+  color: #373f47;
+}
