@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import StarWarsPeopleCard from './StarsWarsPeopleCard';
+import {StyleFlexDiv} from '../styles/style';
 
 export default function StarwarsGrid()
 {
@@ -11,7 +12,6 @@ export default function StarwarsGrid()
         axios.get(`https://swapi.co/api/people`)
         .then(response =>
         {
-            console.log(response.data.results);
             setFriends(response.data.results);
         })
         .catch(err =>
@@ -21,7 +21,7 @@ export default function StarwarsGrid()
     }, []);
     return (
         <div className="container">
-            <div className='enterFriends'>
+            <StyleFlexDiv className='enterFriends'>
                 {friends.map(friend =>
                 {
                     return<StarWarsPeopleCard 
@@ -30,7 +30,7 @@ export default function StarwarsGrid()
                         gender={friend.gender}
                         />
                 })}
-            </div>
+            </StyleFlexDiv>
         </div>
     )
 }

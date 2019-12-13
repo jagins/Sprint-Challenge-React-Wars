@@ -1,4 +1,5 @@
 import React from 'react';
+import {StyledDiv} from '../styles/style'
 
 function StarwarsPeopleCard(props)
 {
@@ -12,10 +13,10 @@ function StarwarsPeopleCard(props)
         gender = 'Unknown';
     }
     return(
-        <div className="people-card">
+        <StyledDiv className="people-card">
             <h1>{name}</h1>
             <p>Gender: {gender}</p>
-        </div>
+        </StyledDiv>
     );
 }
 
